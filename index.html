@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Community Event Portal</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        body{
-            background-color:#f0f8ff;
-        }
-    </style>
 </head>
 <body>
 
-    <h1 style="color:red;">Local Community Event Portal</h1>
+    <h1 class="main-title">Local Community Event Portal</h1>
 
     <header id="mainHeader">
         <nav>
@@ -26,31 +22,43 @@
         </nav>
     </header>
 
+    <section class="banner">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200"
+             alt="Community Event Banner">
+    </section>
+
     <section>
         <h2>Upcoming Events</h2>
 
         <div class="eventCard MusicCard">
-            <h3>Music Festival</h3>
-            <p>Enjoy live performances from local artists.</p>
+            <div class="overlay">
+                <h3>Music Festival</h3>
+                <p>Enjoy live performances from local artists.</p>
+            </div>
         </div>
 
-        <div class="eventCard">
-            <h3>Food Fair</h3>
-            <p>Experience delicious dishes from around the city.</p>
+        <div class="eventCard FoodCard">
+            <div class="overlay">
+                <h3>Food Fair</h3>
+                <p>Experience delicious dishes from around the city.</p>
+            </div>
         </div>
-        <div class="eventCard">
-            <h3>Sports Meet</h3>
-            <p>Join us for a day of fun and fitness activities.</p>
+
+        <div class="eventCard SportsCard">
+            <div class="overlay">
+                <h3>Sports Meet</h3>
+                <p>Join us for a day of fun and fitness activities.</p>
+            </div>
         </div>
     </section>
 
     <section class="news">
         <h2>Community Bulletin</h2>
         <p>
-            The local council is organizing several events this month including 
-            music festivals,cultural celebrations,food fair ,environmental awarness
-            clean-up drive this weekend. Volunteers are welcome to join and help 
-            keep our community clean and green.
+            The local council is organizing several events this month including
+            music festivals, cultural celebrations, food fairs, and environmental
+            awareness clean-up drives this weekend. Volunteers are welcome to join
+            and help keep our community clean and green.
         </p>
     </section>
 
@@ -79,8 +87,9 @@
 
     <h2>Event Registration</h2>
 
-    <form class="form-box" >
+    <form class="form-box">
         <input type="text" placeholder="Name" required>
+
         <input type="email" placeholder="Email" required>
 
         <select>
@@ -92,9 +101,6 @@
 
         <button type="submit">Register</button>
     </form>
-
-    <div class="hiddenBox">Visibility Hidden</div>
-    <div class="noneBox">Display None</div>
 
 </body>
 </html>
