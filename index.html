@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Portal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <a class="navbar-brand logo" href="#">
+                    EventHub
+                </a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#register">Register</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Discover Amazing Community Events</h1>
+
+            <p>
+                Join workshops, festivals, cultural events, and connect with your local community.
+            </p>
+
+            <a href="#register" class="btn btn-primary btn-lg">
+                Register Now
+            </a>
+
+            <div id="welcomeBanner">
+
+                🎉 Welcome Back User!
+
+                <span class="offer">
+                    Special Offer Available
+                </span>
+
+                <span class="highlight">
+                    New Events Added
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Upcoming Events</h2>
+
+                <p>
+                    Explore our latest community activities and workshops.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card event-card h-100">
+
+                        <img src="https://picsum.photos/600/400?random=1"
+                            class="card-img-top"
+                            alt="Music Festival">
+
+                        <div class="card-body">
+
+                            <h3>Music Festival</h3>
+
+                            <p>📅 June 14</p>
+
+                            <p>📍 City Park</p>
+
+                            <button class="btn btn-primary w-100">
+                                Join Event
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card event-card h-100">
+
+                        <img src="https://picsum.photos/600/400?random=2"
+                            class="card-img-top"
+                            alt="Coding Workshop">
+
+                        <div class="card-body">
+
+                            <h3>Coding Workshop</h3>
+
+                            <p>📅 June 21</p>
+
+                            <p>📍 Library Hall</p>
+
+                            <button class="btn btn-primary w-100">
+                                Join Event
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card event-card h-100">
+
+                        <img src="https://picsum.photos/600/400?random=3"
+                            class="card-img-top"
+                            alt="Farmers Market">
+
+                        <div class="card-body">
+
+                            <h3>Farmers Market</h3>
+
+                            <p>📅 Every Saturday</p>
+
+                            <p>📍 Town Square</p>
+
+                            <button class="btn btn-primary w-100">
+                                Join Event
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="light-bg">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Event Gallery</h2>
+
+                <p>
+                    Memories from our previous community events.
+                </p>
+
+            </div>
+
+            <div class="gallery">
+
+                <img src="https://picsum.photos/600/400?random=4" ondblclick="enlargeImage(this)">
+                <img src="https://picsum.photos/600/400?random=5" ondblclick="enlargeImage(this)">
+                <img src="https://picsum.photos/600/400?random=6" ondblclick="enlargeImage(this)">
+                <img src="https://picsum.photos/600/400?random=7" ondblclick="enlargeImage(this)">
+                <img src="https://picsum.photos/600/400?random=8" ondblclick="enlargeImage(this)">
+                <img src="https://picsum.photos/600/400?random=9" ondblclick="enlargeImage(this)">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- REGISTRATION -->
+    <section id="register">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Event Registration</h2>
+
+                <p>
+                    Register now and become part of our growing community.
+                </p>
+
+            </div>
+
+            <form id="registrationForm" class="shadow-lg p-4 bg-white rounded">
+
+                <div class="mb-3">
+
+                    <label for="name" class="form-label">Name</label>
+
+                    <input type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter your name">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="email" class="form-label">Email</label>
+
+                    <input type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="phone" class="form-label">Phone</label>
+
+                    <input type="text"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Enter phone number">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="date" class="form-label">Date</label>
+
+                    <input type="date"
+                        class="form-control"
+                        id="date">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="eventType" class="form-label">Event Type</label>
+
+                    <select id="eventType"
+                        class="form-select"
+                        onchange="showEventFee()">
+
+                        <option value="">Select Event</option>
+                        <option value="music">Music Festival</option>
+                        <option value="coding">Coding Workshop</option>
+                        <option value="market">Farmers Market</option>
+
+                    </select>
+
+                </div>
+
+                <p id="eventFeeDisplay"></p>
+
+                <div class="mb-3">
+
+                    <label for="message" class="form-label">Feedback</label>
+
+                    <textarea id="message"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Enter your message"
+                        onkeyup="countChars()"></textarea>
+
+                    <p id="charCount">
+                        0 characters
+                    </p>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Submit Registration
+                </button>
+
+                <p id="outputMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="light-bg">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Event Promo Video</h2>
+
+                <p>
+                    Watch highlights from our recent events.
+                </p>
+
+            </div>
+
+            <video controls autoplay muted loop oncanplay="videoReady()">
+
+                <source src="14796278_3840_2160_30fps.mp4"
+                    type="video/mp4">
+
+            </video>
+
+            <p id="videoStatus"></p>
+
+        </div>
+
+    </section>
+        <!-- PREFERENCES -->
+    <section id="preferences">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Save Preferences</h2>
+            </div>
+
+            <div class="preference-box">
+
+                <select id="prefEvent" class="form-select">
+
+                    <option value="">Choose Event</option>
+                    <option value="music">Music</option>
+                    <option value="coding">Coding</option>
+                    <option value="market">Market</option>
+
+                </select>
+
+                <div class="button-group">
+
+                    <button class="btn btn-primary"
+                        onclick="savePreference()">
+                        Save Preference
+                    </button>
+
+                    <button class="btn btn-danger"
+                        onclick="clearPreferences()">
+                        Clear Preferences
+                    </button>
+
+                </div>
+
+                <p id="prefMessage"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GEOLOCATION -->
+    <section id="geo" class="light-bg">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Find Nearby Events</h2>
+            </div>
+
+            <div class="geo-box">
+
+                <button class="btn btn-primary"
+                    onclick="findLocation()">
+                    Find Nearby Events
+                </button>
+
+                <div id="geoResult"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Contact Us</h2>
+
+                <p>
+                    We'd love to hear from you. Reach out for any event-related queries.
+                </p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📧
+                    </div>
+
+                    <h3>Email</h3>
+
+                    <p>
+                        events@community.com
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <h3>Phone</h3>
+
+                    <p>
+                        +91 6281156081
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 EventHub. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
